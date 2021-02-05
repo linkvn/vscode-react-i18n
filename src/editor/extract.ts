@@ -48,12 +48,12 @@ class ExtractProvider extends Extract {
   }
 
   getCommands(params) {
-    const promptText = `请输入要保存的路径，例如:common:document.title`
+    const promptText = `Nhập đường dẫn để lưu, ví dụ:common:document.title`
 
     return [
       {
         command: 'react-i18n.extract',
-        title: `提取为{t('key')}`,
+        title: `Convert theo dạng:{t('key')}`,
         arguments: [
           {
             ...params,
@@ -66,7 +66,7 @@ class ExtractProvider extends Extract {
       },
       {
         command: 'react-i18n.extract',
-        title: `提取为t('key')`,
+        title: `Convert theo dạng:('key')`,
         arguments: [
           {
             ...params,
